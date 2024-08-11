@@ -1,3 +1,4 @@
+import { FC } from 'react'
 import { BookmarkIcon, MapPinIcon, StarIcon } from 'lucide-react'
 import Image from 'next/image'
 
@@ -5,12 +6,31 @@ import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent } from '@/components/ui/card'
 
-const MasterCard = () => {
+export interface MasterCardProps {
+  id: number
+  picture: string
+  name: string
+  description: string
+  tags: string[]
+  location: string
+  rating: number
+  link: string
+}
+
+const MasterCard: FC<MasterCardProps> = ({
+  picture,
+  name,
+  description,
+  tags,
+  location,
+  rating,
+  link,
+}) => {
   return (
     <Card className="w-full">
       <div className="relative">
         <Image
-          src="https://generated.vusercontent.net/placeholder.svg"
+          src={picture}
           alt="Profile"
           className="w-full h-48 object-cover rounded-t-md"
           width="300"
@@ -22,16 +42,18 @@ const MasterCard = () => {
       </div>
 
       <CardContent className="p-4">
-        <h2 className="text-xl font-bold">Lenka</h2>
+        <h2 className="text-xl font-bold">{name}</h2>
 
-        <p className="text-sm text-muted-foreground">Stylize everything</p>
+        <p className="text-sm text-muted-foreground truncate">{description}</p>
 
-        <div className="flex flex-wrap gap-2 mt-4">
-          {['woman', 'kid', 'fashion', 'woman', 'kid', 'fashion'].map(tag => (
-            <Badge key={tag} variant="secondary">
-              {tag}
-            </Badge>
-          ))}
+        <div className="flex flex-wrap gap-2 mt-4 h-[64px] overflow-y-auto">
+          <div className="flex flex-wrap gap-2 h-1/2">
+            {tags.slice(0, 4).map((tag, index) => (
+              <Badge key={`tag-${index}-${tag}`} variant="secondary">
+                {tag}
+              </Badge>
+            ))}
+          </div>
         </div>
 
         <div className="mt-4">
@@ -39,17 +61,20 @@ const MasterCard = () => {
 
           <div className="flex items-center">
             <MapPinIcon className="h-4 w-4 text-primary mr-2" />
-            <span className="text-primary">Antalya</span>
+            <span className="text-primary">{location}</span>
           </div>
         </div>
 
         <div className="flex items-center mt-4">
-          <StarIcon className="h-4 w-4 text-yellow-500" />
-          <StarIcon className="h-4 w-4 text-yellow-500" />
-          <StarIcon className="h-4 w-4 text-yellow-500" />
-          <StarIcon className="h-4 w-4 text-yellow-500" />
-          <StarIcon className="h-4 w-4 text-muted-foreground" />
-          <span className="ml-2 text-sm">56</span>
+          {[1, 2, 3, 4, 5].map(starNumber => (
+            <StarIcon
+              key={starNumber}
+              className={`h-4 w-4 ${
+                starNumber <= Number(rating) ? 'text-yellow-500' : 'text-muted-foreground'
+              }`}
+            />
+          ))}
+          <span className="ml-2 text-sm">{rating}</span>
         </div>
 
         <div className="flex mt-4">
