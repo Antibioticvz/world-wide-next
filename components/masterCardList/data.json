@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "picture": "https://placekitten.com/200/300",
+    "name": "Misterio La Cruz",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "tags": ["people"],
+    "location": "New York",
+    "rating": 1.5,
+    "link": "shopperID"
+  },
+  {
+    "id": 2,
+    "picture": "https://placekitten.com/200/300",
+    "name": "Panda Nature",
+    "description": "Lorem ipsum dolor sit.",
+    "tags": ["animal", "nature", "panda"],
+    "location": "China",
+    "rating": 3.8,
+    "link": "shopperID"
+  },
+  {
+    "id": 3,
+    "picture": "https://placekitten.com/200/300",
+    "name": "Waterfall",
+    "description": "Lorem ipsum consectetur adipiscing elit.",
+    "tags": ["nature", "fashion", "woman", "kid", "fashion"],
+    "location": "USA",
+    "rating": 4.2,
+    "link": "shopperID"
+  },
+  {
+    "id": 4,
+    "picture": "https://placekitten.com/200/300",
+    "name": "Lenka",
+    "description": "Stylize everything",
+    "tags": ["woman", "kid", "fashion", "woman", "kid", "fashion", "random", "new"],
+    "location": "Paris",
+    "rating": 4.9,
+    "link": "shopperID"
+  }
+]
