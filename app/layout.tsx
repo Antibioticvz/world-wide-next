@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <TopMenu />
-        {children}
+        <div className="container mx-auto p-4">{children}</div>
       </body>
     </html>
   )
