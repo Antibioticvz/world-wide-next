@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "picture": "https://placekitten.com/200/300",
+    "name": "Mystery event",
+    "price": 15,
+    "link": "eventID"
+  },
+  {
+    "id": 2,
+    "picture": "https://placekitten.com/200/300",
+    "name": "Meet The Incredible House in Paris",
+    "price": 34,
+    "link": "eventID"
+  },
+  {
+    "id": 3,
+    "picture": "https://placekitten.com/200/300",
+    "name": "Shopping party in Vegas",
+    "price": 64,
+    "link": "eventID"
+  },
+  {
+    "id": 4,
+    "picture": "https://placekitten.com/200/300",
+    "name": "Zara event",
+    "price": 7,
+    "link": "eventID"
+  },
+  {
+    "id": 5,
+    "picture": "https://placekitten.com/200/300",
+    "name": "My BDay shopping event in Tokyo",
+    "price": 24,
+    "link": "eventID"
+  },
+  {
+    "id": 6,
+    "picture": "https://placekitten.com/200/300",
+    "name": "United States of America Balence Day",
+    "price": 16,
+    "link": "eventID"
+  },
+  {
+    "id": 7,
+    "picture": "https://placekitten.com/200/300",
+    "name": "One more mystery event",
+    "price": 15,
+    "link": "eventID"
+  },
+  {
+    "id": 8,
+    "picture": "https://placekitten.com/200/300",
+    "name": "Test event",
+    "price": 5,
+    "link": "eventID"
+  }
+]
