@@ -1,6 +1,7 @@
 import 'server-only'
 
 import MasterCardList from '@/components/masterCardList'
+import EventCardList from '@/components/eventCardList '
 
 // export const experimental_ppr = true
 
@@ -8,8 +9,7 @@ const Home = () => {
   return (
     <div className="font-sans ">
       <main className="flex flex-col">
-        <h1 className="text-3xl font-bold sm:text-5xl">World Wide Hello</h1>
-
+        <EventCardList />
         <MasterCardList />
       </main>
       <footer className=""></footer>
