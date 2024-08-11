@@ -1,10 +1,10 @@
 import 'server-only'
 
-export const experimental_ppr = true
+// export const experimental_ppr = true
 
 const Home = () => {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
+    <div className="font-sans ">
       <main className="flex flex-col">
         <h1 className="text-3xl font-bold sm:text-5xl">World Wide Hello</h1>
       </main>
